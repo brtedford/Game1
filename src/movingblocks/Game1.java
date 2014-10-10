@@ -26,19 +26,19 @@ package movingblocks;
 //Failure ondition: player loses all lives by getting hit by traps
 
 
-//needed object classes to implement:
+//need to implement:
 
-    
+    //collision detection on walls
+    //for player and traps
 
-    
+    //trap randomizer
 
-    
-
-    
-
-    
+    //level setup
 
     //Scoring: +1 upon each goal reached
+    //new random level on each goal reached
+
+    //TESTS
 
     
 
