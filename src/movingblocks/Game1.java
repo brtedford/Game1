@@ -71,16 +71,16 @@ class Player {
     //for movement UP, DOWN, LEFT, and RIGHT
 
     public void playMove(String keyPress) {
-        if(keyPress.equals("right")){
+        if(keyPress.equals("right") & this.playLoc.x < 600 + this.size % 2 ){
             this.playLoc = new Posn(this.playLoc.x + this.size, this.playLoc.y);
         }
-        else if(keyPress.equals("left")){
+        else if(keyPress.equals("left") & this.playLoc.x > 0 - this.size % 2){
             this.playLoc = new Posn(this.playLoc.x - this.size, this.playLoc.y);
         }
-        else if(keyPress.equals("up")){
-            this.playLoc = new Posn(this.playLoc.x, this.playLoc.y + this.size);
+        else if(keyPress.equals("up") & this.playLoc.y < 600 + this.size % 2){
+            this.playLoc = new Posn(this.playLoc.x, this.playLoc.y);
         }
-        else if(keyPress.equals("down")){
+        else if(keyPress.equals("down") & this.playLoc.y > 0 - this.size % 2){
             this.playLoc = new Posn(this.playLoc.x, this.playLoc.y - this.size);
         }
     }
